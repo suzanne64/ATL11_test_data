@@ -1,0 +1,12 @@
+Note: Data transfer tools like wget or cURL can be used to retrieve all the data
+with one command using the above (listed on the url emailed after the data request; .html)
+text listing as input. 
+
+In a UNIX-like environment, use the following commands to download data to the current working directory:
+Using wget
+
+> wget -i <url text file>
+
+Using cURL
+
+> for i in `cat <url text file>`; do curl $i -OL -s; done
